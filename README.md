@@ -1,34 +1,35 @@
-# Automated-Data-Science-Resume-Collector
+# Automated Data Science Resume Collector
 
-Description:
-This project is designed to automate the process of searching, extracting, and downloading Data Science resumes in PDF format from Google search results. The script focuses on resumes from Pakistan and performs the following key tasks:
+## Description  
+This project automates the process of searching, extracting, and downloading Data Science resumes in PDF format from Google search results. The script focuses on resumes from Pakistan and performs key web scraping and file management tasks.
 
-Web Scraping: Uses BeautifulSoup and requests to scrape Google search results for PDF resumes matching the query "data science resume Pakistan filetype:pdf".
+## Key Features
+- **Web Scraping**: Uses `BeautifulSoup` and `requests` to scrape Google for PDFs matching `" data science resume Pakistan filetype: pdf"`
+- **Link Management**:
+  - Extracts PDF links from search results
+  - Removes duplicate entries
+  - Validates URLs using regex
+- **Automated Downloading**: Uses Selenium with Chrome WebDriver to download PDFs to local storage
+- **Cloud Integration**: Uploads files to Google Drive via PyDrive for centralized access
 
-Link Extraction and Purification: Extracts PDF links from the search results, removes duplicates, and ensures only valid PDF URLs are retained.
+## Ideal Use Cases
+- Recruiters analyzing resume trends
+- Job market researchers
+- Data science competency assessments
 
-Automated Downloading: Utilizes Selenium with Chrome WebDriver to automatically download the PDF files to a specified local directory.
+## Technology Stack
+| Category        | Tools/Libraries               |
+|-----------------|-------------------------------|
+| Core Language   | Python                        |
+| Web Scraping    | BeautifulSoup, Requests       |
+| Browser Automation | Selenium                    |
+| Cloud Storage   | PyDrive (Google Drive API)    |
+| URL Validation  | Regular Expressions           |
 
-Google Drive Integration: Uploads the downloaded files to a Google Drive folder using the PyDrive library, enabling easy storage and sharing.
+## Workflow
+1. Google search result scraping
+2. PDF link extraction and purification
+3. Automated file downloading
+4. Batch upload to Google Drive
 
-The project is ideal for recruiters, researchers, or anyone looking to analyze trends in Data Science resumes from Pakistan. It demonstrates skills in web scraping, automation, and cloud storage integration.
-
-Key Features:
-
-Scrapes multiple pages of Google search results.
-
-Handles duplicate links and invalid URLs.
-
-Automates file downloads and organizes them in a dedicated folder.
-
-Supports batch uploading to Google Drive for centralized storage.
-
-Technologies Used:
-
-Python
-
-BeautifulSoup, Requests, Selenium (for web scraping and automation)
-
-PyDrive (for Google Drive integration)
-
-Regular Expressions (for URL validation)
+> **Note**: Demonstrates practical skills in web scraping, automation, and cloud integration.
